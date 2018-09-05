@@ -1,0 +1,56 @@
+<!-- <input type="text" (keyup)="onNameKeyUp($event)">
+
+    <!--The content below is only a placeholder and can be replaced.-->
+<div class="container-fluid">
+        <div class="col-md-offset-1">
+          <h1>
+            Welcome to {{title}}!
+          </h1>
+        </div>
+      
+        <div class="container link">
+          <h4>
+            <a routerLink="/restaurants"> List Restaurants</a> |
+            <a style="margin-left:10px" routerLink="/add">Add Restaurants</a> |
+           <!-- <a style="margin-left:10px" routerLink="/login">Login</a> -->
+          </h4>
+        </div>
+        <br/>
+        <router-outlet></router-outlet>
+      </div>
+      <br/>
+      <div class="jumbotron" style="background-color:burlywood">
+        <div class="container">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h3>Display Login Massage</h3>
+            <alert></alert>
+          </div>
+        </div>
+      </div>
+<button (click)="getProfile()">Get Restaurant Profile</button>
+<br>
+<table *ngFor="let jsonData of dataNew">
+    <tr>
+        <td>{{jsonData.id}}</td>
+        <td>{{jsonData.name}}</td>
+    </tr>
+</table>
+<button (click)="getRestaurant()">get Restaurant</button>
+<br>
+<table *ngFor="let q of restaurantdata">
+    <tr>
+        <td>{{q.id}}</td>
+        <td>{{q.name}}</td>
+        <td>{{q.location.address}}</td>
+    </tr>
+</table> -->
+
+<!-- <button (click)="getRest()">Restaurant</button>
+<br>
+<button (click)="postProfile()">Create Profile</button>
+<br>
+<br>
+<button (click)="deleteProfile()">Delete Profile</button>
+<br>
+<button (click)="updateProfile()">Update Profile</button> -->
+<router-outlet></router-outlet>
